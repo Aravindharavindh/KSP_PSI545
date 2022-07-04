@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CallLetter.repx" />
+    <None Remove="Report\FinalApplication.repx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CallLetter.repx" />
+    <EmbeddedResource Include="Report\FinalApplication.repx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Reporting.Core" Version="19.2.6-pre-20006" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CallLetter.cs">
+      <DependentUpon>CallLetter.repx</DependentUpon>
+    </Compile>
+    <Compile Update="CallLetter.Designer.cs">
+      <DependentUpon>CallLetter.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\FinalApplication.cs">
+      <DependentUpon>FinalApplication.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\FinalApplication.Designer.cs">
+      <DependentUpon>FinalApplication.repx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+.srb-card-he h4 {
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.srb-card-he img {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.srb-dash-head p {
+    font-size: 14px;
+    background-color: #f8360a !important;
+    color: #fff;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
